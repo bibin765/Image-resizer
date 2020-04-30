@@ -1,0 +1,50 @@
+<nav class="navbar navbar-custom">
+  <div class="container-fluid">
+      <div class="navbar-header">
+          <a href="#" class="navbar-brand">Image Resizer</a>
+      </div>
+      <div class="collapse navbar-collapse">
+      </div>
+  </div>
+</nav>
+
+<div class="container">
+<div style="max-width: 650px; margin: auto;">
+    <h1 class="page-header">Image Resizer</h1>
+    <p class="lead">Select a JPG image</p>
+      <div class="form-group">
+        <input type="file" name="file" id="file" required (change)="onFileSelected($event)">
+        <br>
+        <button class="button" style="margin:5px;" (click)="button25Select()" >Reduce to 25%</button>
+        <button class="button" style="margin:5px;" (click)="button50Select()" >Reduce to 50%</button>
+          
+      </div>
+      <button class="btn btn-lg btn-primary" id="upload-button" (click)="onUpload()">Resize image</button>
+      <br><br>
+      <br>
+  </div>
+  <img [src]="imageURL"class="center"/>
+</div>
+
+<div class="container">
+  <h2>Resized History</h2>       
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>size</th>
+        <th>Time</th>
+        <th>Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let row of arrayDetails" >
+        <td *ngFor = "let column of headers">
+          {{row[column]}}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+

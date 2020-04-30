@@ -1,0 +1,25 @@
+.navbar-custom{
+    background-color: rgb(119, 3, 119);
+}
+.navbar-brand{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: x-large;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+.button {
+    background: none;
+  }
+  
+  .button:active{
+      background:olive;
+  }
+  
+  .button:focus{
+      background:olive;
+  }
