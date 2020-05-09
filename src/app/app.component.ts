@@ -31,13 +31,13 @@ export class AppComponent {
   button25Select(){
     this.button25 = true;
     this.button50 = false;
-    this.localUrl = 'http://localhost:5000/25'
+    this.localUrl = 'http://localhost:5000/25';
   }
 
   button50Select(){
     this.button50 = true;
     this.button25 = false;
-    this.localUrl = 'http://localhost:5000/50'
+    this.localUrl = 'http://localhost:5000/50';
   }
 
   onUpload(){
